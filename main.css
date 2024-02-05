@@ -111,3 +111,13 @@ header a:hover {
   border-radius: 50%;
   height: 35px;
 }
+.card .profile span:first-child {
+  font-weight: bold;
+  display: block;
+  color: black;
+  font-size: 12px;
+}
+.card .profile span:last-child {
+  font-size: 9px;
+  display: block;
+}
