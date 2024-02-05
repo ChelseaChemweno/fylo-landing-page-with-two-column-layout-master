@@ -1,23 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap");
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-a {
-  color: inherit;
-  text-decoration: none;
-}
 body {
+  font-family: "Open Sans", sans-serif;
+}
+h1 h2 h3 {
+  font-family: " Raleway", sans-serif;
+}
+header,
+footer,
+section {
   padding: 30px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav a {
-  margin-left: 17px;
+#main-logo {
+  height: 35px;
 }
-.section-img {
+header a {
+  padding: 10px 15px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500px;
+}
+header a:hover {
+  background-color: aqua;
+}
+.section-text {
+  text-align: center;
+}
+.section-image img {
   width: 100%;
+}
+.intro h1 {
+  font-size: 34px;
+  line-height: 45px;
+}
+.cta-form input {
+  display: block;
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+}
+.intro p {
+  margin: 12px 0px;
+}
+.cta-form input[type="submit"] {
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  border: none;
+}
+
+.cta-form input[type="text"] {
+  margin: 12px 0px;
+}
+.cta-form input[type="submit"]:focus {
+  outline: none;
+  border-color: hsl(224, 93%, 58%);
+}
+.cta-form input[type="submit"]:hover {
+  box-shadow: 1px 1px 3px hsl(224, 93%, 58%);
+}
+
+.wherever-you-are {
+  background-color: hsl(240, 75%, 98%);
+}
+#curved-bg-mobile img {
+  width: 100%;
+  display: block;
+}
+.wherever-you-are h2 {
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.wherever-you-are p {
+  text-align: left;
+  color: hsl(238, 22%, 44%);
+}
+.wherever-you-are .section-text a {
+  text-align: center;
+  color: hsl(170, 45%, 43%);
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+.card {
+  background: white;
+  border-radius: 6px;
+  padding: 13px;
+  margin: 38px 15px;
+  text-align: center;
+  box-shadow: 0px 0px 6px lightgray;
+}
+.card .profile {
+  display: flex;
+}
+.card .profile img {
+  border-radius: 50%;
+  height: 35px;
 }
